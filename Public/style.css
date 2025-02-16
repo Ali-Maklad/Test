@@ -9,7 +9,7 @@ box-sizing: border-box;
 html, body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* منع السكرول الأفقي /
+  overflow-x: hidden; 
 }
 
 body {
@@ -24,12 +24,12 @@ body {
 }
 
 #chat {
-  flex: 0.3; / تقليل الحجم بالنسبة للعرض /
+  flex: 0.3; 
   display: flex;
   flex-direction: column;
   border-left: 1px solid #ccc;
   height: 100%;
-  max-width: 350px; / وضع حد أقصى للعرض /
+  max-width: 350px; 
 }
 
 #messages {
@@ -85,7 +85,7 @@ body {
     height: 30%;
     border-top: 1px solid #ccc;
     font-size: 14px;
-    max-width: 100%; / جعل الشات لا يأخذ عرض أكبر من اللازم */
+    max-width: 100%;
   }
 
   #input-container {
