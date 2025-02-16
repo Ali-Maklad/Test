@@ -1,5 +1,5 @@
 
-const socket = io("http://localhost:3000"); // Replace with your server URL
+const socket = io(window.location.origin); // Replace with your server URL
 
 // Add a blue dot at the static location
 let map = L.map("map").setView([30.441392, 31.342281], 12); // استخدام الموقع الأولي
