@@ -31,11 +31,11 @@ function mqttHandler () {
     } else if (topic === "Accident") {
       const accidentLocation = JSON.parse(message.toString());
       console.log("Accident Alert:", accidentLocation);
-      io.emit("accident", accidentLocation);
+      socket.emit("accident", accidentLocation);
     } else if (topic === "HighSpeed") {
       const highSpeedAlert = JSON.parse(message.toString());
       console.log("HighSpeed Alert:", highSpeedAlert);
-      io.emit("highSpeed", highSpeedAlert);
+      socket.emit("highSpeed", highSpeedAlert);
     }
   });
 };
